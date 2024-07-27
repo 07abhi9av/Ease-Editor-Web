@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+    /* font-size: 15px; */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #F5BE49;
+}
+
+.navbar {
+    font-size: 24px;
+    padding: 2px 20px;
+    background-color: #424344;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navbar-brand {
+    /* font-family: 'Outfit', sans-serif; */
+    color: white !important;
+    font-size: x-large;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(100vh - 100px); /* Adjust according to navbar height */
+}
+
+.text_box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 10px 0; /* Removed bottom margin */
+    overflow-y: auto;
+    background-color: #fafafa;
+    font-size: 18px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 40px 40px; /* Further reduced top padding */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 0; /* Removed top margin */
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}

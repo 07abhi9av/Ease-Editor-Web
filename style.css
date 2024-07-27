@@ -1,0 +1,229 @@
+/* Importing Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@font-face {
+	font-family: 'GulfsDisplay';
+	src: url('fonts/GulfsDisplay-Normal.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/GothamBold.ttf') format('truetype');
+	font-weight: bold;
+	/* Use 'bold' for this variant */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nothing';
+	src: url('fonts/nothing.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* General Body Styles */
+body {
+	background: #F5BE49;
+	/* Gradient background for aesthetic look */
+	font-family: 'Poppins', sans-serif;
+	/* Modern font similar to Spotify */
+	color: #333;
+	/* Dark grey text color */
+	margin: 0;
+	padding: 0;
+}
+
+/* Container Styles */
+/* Container Styles */
+.container {
+	position: relative;
+	/* Ensure the container is positioned */
+	max-width: 80%;
+	padding: 100px;
+	margin-top: 37px;
+	background: #ffffff;
+	border-radius: 20px;
+	box-shadow: 0px -3px 10px rgba(1, 0, 0, 2);
+	border: 2px solid black;
+}
+
+/* Dot Container */
+.dot-container {
+	position: absolute;
+	top: 18px;
+	/* Adjust vertical positioning */
+	left: 20px;
+	/* Adjust horizontal positioning */
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+	/* Space between dots */
+}
+
+.line {
+	position: absolute;
+	top: 25px;
+	/* Position it below the dots */
+	left: 0px;
+	/* Align with dot container */
+	width: 980px;
+	/* Full width or adjust as needed */
+	border-top: 1px solid black;
+	/* Thin black line */
+}
+
+/* Dot Styles */
+.dot {
+	width: 15px;
+	/* Diameter of each dot */
+	height: 15px;
+	border-radius: 50%;
+	/* Make it a circle */
+}
+
+.dot.red {
+	background: red;
+	/* Red dot */
+}
+
+.dot.yellow {
+	background: yellow;
+	/* Yellow dot */
+}
+
+.dot.green {
+	background: green;
+	/* Green dot */
+}
+
+
+/* Heading Styles */
+h1 {
+	font-family: 'GulfsDisplay', sans-serif;
+	font-size: 3rem;
+	color: #1A1A1A;
+	text-align: center;
+	margin-bottom: 30px;
+	background-color: #f4b734;
+	width: 54%;
+	margin-left: 190px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+	/* border-top-left-radius: 80%; */
+}
+
+
+/* Row Styles */
+.row {
+	margin-bottom: 20px;
+	/* Vertical spacing between rows */
+}
+
+
+/* Button Styles */
+.btn-container {
+	display: flex;
+	justify-content: center;
+	/* Center align buttons */
+}
+
+.btn-custom {
+	font-family: 'Gotham', sans-serif;
+	width: 200px;
+	/* Adjust width as needed */
+	height: 50px;
+	/* Adjust height as needed */
+	background-color: #fff;
+	/* Set background color */
+	border-radius: 6px;
+	/* Adjust border radius as needed */
+	border: 2px solid #000;
+	box-shadow: 2px 5px 8px rgba(1, 0, 0, 1);
+	/* Set border color and width */
+}
+
+.btn-custom:hover {
+	transform: scale(1.10);
+	/* Slightly enlarge button */
+}
+
+.btn-custom:active {
+	transform: scale(0.95);
+	/* Slightly shrink button when clicked */
+}
+
+/* Button Color Styles */
+.btn-warning {
+	background-color: #FFC107;
+	/* Premium yellow */
+	color: #FFFFFF;
+	/* White text */
+}
+
+.btn-warning:hover {
+	background-color: #FFB300;
+	/* Darker yellow on hover */
+	color: #FFFFFF;
+
+}
+
+.btn-dark {
+	background-color: #343A40;
+	/* Dark grey */
+	color: #FFFFFF;
+	/* White text */
+}
+
+.btn-dark:hover {
+	background-color: #23272B;
+	/* Even darker grey on hover */
+}
+
+.btn-primary {
+	background-color: #007BFF;
+	/* Vibrant blue */
+	color: #FFFFFF;
+	/* White text */
+}
+
+.btn-primary:hover {
+	background-color: #0056b3;
+	/* Darker blue on hover */
+}
+
+.btn-success {
+	background-color: #28A745;
+	/* Green */
+	color: #FFFFFF;
+	/* White text */
+}
+
+.btn-success:hover {
+	background-color: #218838;
+	/* Darker green on hover */
+}
+
+.footer {
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Nothing', sans-serif;
+	height: 43px;
+	background-color: #343a40;
+	color: white;
+	text-align: center;
+	padding: 1.5rem 0;
+	box-shadow: 0 -3px 16px rgba(1, 0, 0, 2);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	font-size: 13px;
+}
+
+.footer p {
+	font-weight: 600;
+}
+
+.spaced-text {
+	letter-spacing: 0.2em;
+	word-spacing: 0.2em;
+}
